@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Kings</title>
+  </head>
+  <body>
+    <div>
+      <header class="page-header">
+        <div class="header-content">
+          <div class="header-logo-container">
+            <a href="index.html">
+              <img
+                src="./assets/images/kings-logo-light.png"
+                alt="Kings Logo"
+                class="header-logo"
+              />
+            </a>
+          </div>
+          <div class="header-links">
+            <a href="./about.html"><h1>ABOUT</h1></a>
+            <a href="./contact.html"><h1>CONTACT</h1></a>
+          </div>
+        </div>
+      </header>
+      <main class="page-content" id="page-content">
+        <!-- Motorcycle data will be loaded from JSON file -->
+        <!-- The card of the motorcycles will be displayed here -->
+      </main>
+      <div class="other-details">
+        <div class="other-content">
+          <div class="logo-footer-container">
+            <img src="./assets/images/kings-logo-light.png" alt="kings logo" />
+          </div>
+          <div class="about-container">
+            <div>
+              <h1>About Us</h1>
+              <p style="color: white">Welcome to Kings, your ultimate destination for all things motorcycles! At Kings, we are passionate about the thrill of the ride and the freedom that comes with it. Our mission is to bring together a community of motorcycle enthusiasts by offering expert insights, the latest trends, and a platform to celebrate the culture of motorcycling. Whether you're a seasoned rider or just starting your journey, Kings is here to fuel your passion with engaging content, tips, and resources to make every ride unforgettable. Join us as we explore the open road and embrace the spirit of adventure!</p>
+            </div>
+          </div>  
+          <div class="contact-container">
+            <div>
+              <h1>Contact Us</h1>
+              <p style="color: white">"Have questions? We're here to help! Reach out to us by phone at <strong>(123) 456-7890</strong>, email us at <strong>support@kings.com</strong>. We strive to respond to all inquiries within 24 hours. Let's talk!" </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="page-footer">
+        <p class="footer-text">&copy; 2025 Kings. All rights reserved.</p>
+      </footer>
+    </div>
+    <script type="module">
+        import { fetchAllMotorcycleData } from './scripts/fetchAllMotorcycleData.js';
+        
+        fetchAllMotorcycleData();
+    </script>
+  </body>
+</html>

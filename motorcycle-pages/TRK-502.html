@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <title>TNT 135</title>
+</head>
+<body>
+  <div>
+    <header class="page-header">
+      <div class="header-content">
+        <div class="header-logo-container">
+          <a href="../index.html">
+            <img
+              src="../assets/images/kings-logo-light.png"
+              alt="Kings Logo"
+              class="header-logo"
+            />
+          </a>
+        </div>
+        <div class="header-links">
+          <a href="../index.html"><h1>HOME</h1></a>
+          <a href="../about.html"><h1>ABOUT</h1></a>
+          <a href="../contact.html"><h1>CONTACT</h1></a>
+        </div>
+      </div>
+    </header>
+    <main class="page-content" id="page-content">
+      <!-- The Specific Motorcycle data will be loaded from JSON file -->
+    </main>
+    <footer class="page-footer">
+      <p class="footer-text">&copy; 2025 Kings. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script type="module">
+      import { fetchSpecificMotorcycleData } from './fetchSpecificMotorcycleData.js';
+
+      fetchSpecificMotorcycleData("TRK 502");
+    </script>
+</body>
+</html>
